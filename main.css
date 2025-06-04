@@ -1,0 +1,115 @@
+/* main - css - общие стили */
+@font-face {
+  font-family: "RodchenkoCondBold";
+  src: url("rodchenko-condensed-bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+}
+
+.rz-mayak-section {
+  margin-bottom: 8.3vw;
+}
+.rz-mayak-heading {
+  font-family: "RodchenkoCondBold", Arial, sans-serif !important;
+  font-size: clamp(5.25rem, 8.75vw, 168px);
+  font-weight: 700;
+  line-height: 1;
+  word-wrap: break-word;
+  margin: 0 !important;
+}
+.rz-mayak-text-simple {
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(1rem, 1.25vw, 24px);
+}
+.rz-mayak-card-title {
+  font-family: "RodchenkoCondBold", Arial, sans-serif !important;
+  font-size: clamp(2rem, 2.5vw, 48px);
+  line-height: 1;
+  font-weight: 700;
+  color: #181716;
+}
+.rz-mayak-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  width: fit-content;
+  border-radius: 40px;
+  font-family: "Montserrat", Arial, sans-serif;
+  font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+  line-height: 1.2;
+  box-sizing: border-box;
+  padding: 0.83vw 2.6vw;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+}
+.rz-mayak-btn__icon {
+  width: 0.7vw;
+  height: 0.7vw;
+  background-size: cover;
+}
+.rz-mayak-btn--primary {
+  background: #eb4040;
+  color: #fff;
+}
+.rz-mayak-btn--primary .rz-mayak-btn__icon {
+  background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0.5%2014.5V0.5L14.5%207.5L0.5%2014.5Z%22%20fill%3D%22white%22/%3E%3C/svg%3E");
+}
+.rz-mayak-btn--secondary {
+  background: #f2ead7;
+  color: #181716;
+}
+.rz-mayak-btn--secondary .rz-mayak-btn__icon {
+  background-image: url('data:image/svg+xml;utf8,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 14V0L14 7L0 14Z" fill="%23EB4040"/></svg>');
+}
+.rz-mayak-btn--lg {
+  padding-top: 1.12vw;
+  padding-bottom: 1.12vw;
+}
+.rz-mayak-block-bg-red {
+  background-color: #eb4040;
+  background-image: url("data:image/svg+xml,%3Csvg width='556' height='556' viewBox='0 0 556 556' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle opacity='0.2' cx='278' cy='278' r='278' fill='%23F2EAD7'/%3E%3C/svg%3E"),
+    url("data:image/svg+xml,%3Csvg width='687' height='1013' viewBox='0 0 687 1013' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.2' d='M278.599 48.2976L0 0.75L686.35 1012.54L278.599 48.2976Z' fill='%23FFF8E7'/%3E%3C/svg%3E");
+  background-size: 29vw, 35.7vw !important;
+  background-position: bottom -7.2vw left 2vw, top -3vw right -10vw !important;
+  background-repeat: no-repeat;
+  background-size: contain; /* или cover / auto */
+  background-position: center;
+  padding: 8.3vw 0;
+}
+.rz-mayak-advantages-block-item {
+  padding: 1.66vw !important;
+  box-sizing: border-box;
+  background-color: #fff8e7;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  height: 12.5vw;
+}
+.rz-mayak-advantages-block-item--image {
+  background-size: cover;
+  background-position: center;
+}
+.rz-mayak-advantages-block-item__description {
+  color: #181716;
+  font-size: clamp(1rem, 1.45vw, 28px); /* 28px */
+  font-family: "Montserrat", Arial, sans-serif;
+  font-weight: 400;
+  line-height: 1.2;
+  margin: 0 !important;
+}
+/* main - css - end */

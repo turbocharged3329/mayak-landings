@@ -1,99 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Oswald:wght@700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="main.css">
     <style>
-          /* main - css - общие стили */
-      @font-face {
-        font-family: "RodchenkoCondBold";
-        src: url("rodchenko-condensed-bold.ttf") format("truetype");
-        font-weight: 700;
-        font-style: normal;
-      }
-
-      html,
-      body {
-        height: 100%;
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-
-      body {
-        min-height: 100vh;
-      }
-
-      .rz-mayak-section {
-        margin-bottom: 8.3vw;
-      }
-      .rz-mayak-heading {
-        font-family: "RodchenkoCondBold", Arial, sans-serif;
-        font-size: clamp(5.25rem, 8.75vw, 168px);
-        font-weight: 700;
-        line-height: 1;
-        word-wrap: break-word;
-        margin: 0 !important;
-      }
-      .rz-mayak-text-simple {
-        font-family: "Montserrat", Arial, sans-serif;
-        font-size: clamp(1rem, 1.25vw, 24px);
-      }
-      .rz-mayak-card-title {
-        font-family: "RodchenkoCondBold", Arial, sans-serif;
-        font-size: clamp(2rem, 2.5vw, 48px);
-        line-height: 1;
-        font-weight: 700;
-        color: #181716;
-      }
-      .rz-mayak-btn {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        gap: 12px;
-        width: fit-content;
-        border-radius: 40px;
-        font-family: "Montserrat", Arial, sans-serif;
-        font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
-        line-height: 1.2;
-        box-sizing: border-box;
-        padding: 0.83vw 2.6vw;
-        font-weight: 600;
-        border: none;
-        cursor: pointer;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
-      }
-      .rz-mayak-btn__icon {
-        width: 0.7vw;
-        height: 0.7vw;
-        background-size: cover;
-        /* background-image: url('data:image/svg+xml;utf8,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 14V0L14 7L0 14Z" fill="%23EB4040"/></svg>'); */
-      }
-      .rz-mayak-btn--primary {
-        background: #eb4040;
-        color: #fff;
-      }
-      .rz-mayak-btn--primary .rz-mayak-btn__icon {
-        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%2215%22%20height%3D%2215%22%20viewBox%3D%220%200%2015%2015%22%20fill%3D%22none%22%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%3E%3Cpath%20d%3D%22M0.5%2014.5V0.5L14.5%207.5L0.5%2014.5Z%22%20fill%3D%22white%22/%3E%3C/svg%3E");
-      }
-      .rz-mayak-btn--secondary {
-        background: #f2ead7;
-        color: #181716;
-      }
-      .rz-mayak-btn--secondary .rz-mayak-btn__icon {
-        background-image: url('data:image/svg+xml;utf8,<svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M0 14V0L14 7L0 14Z" fill="%23EB4040"/></svg>');
-      }
-      .rz-mayak-btn--lg {
-        padding-top: 1.12vw;
-        padding-bottom: 1.12vw;
-      }
-      /* main - css - end */
-    
       /* 1 - css - Баннер */
       .rz-mayak-hero {
         position: relative; /* Для абсолютного позиционирования дочерних элементов */
@@ -108,7 +24,7 @@
         z-index: 3;
         margin: 0 !important;
         color: white;
-        font-size: clamp(8.5rem, 11vw, 210px); 
+        font-size: clamp(8.5rem, 11vw, 210px);
         font-family: "RodchenkoCondBold", Arial, sans-serif;
         font-weight: 700;
         line-height: 88%;
@@ -143,16 +59,175 @@
         z-index: 1; /* За фигурами */
       }
       /* 1 - css - Баннер - end */
+
+      /* 2 - css - О проекте */
+      .rz-mayak-about-block {
+        width: 75vw;
+        height: 26.46vw; /* например, 508px относительно 1920px */
+        display: flex;
+        align-items: stretch;
+        gap: 1.5625vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .rz-mayak-about-block-img {
+        width: 36.72vw;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0px 0.21vw 3.33vw rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        background-image: url("https://placehold.co/705x508");
+        background-size: cover;
+        background-position: center;
+      }
+      .rz-mayak-about-block__line1 {
+        width: 100%;
+        height: 9px;
+        background: #EB4040;
+        margin-bottom: 5px;
+      }
+      .rz-mayak-about-block__line2 {
+        width: 100%;
+        height: 3px;
+        background: #181716;
+        margin-bottom: 1.15vw;
+      }
+      .rz-mayak-about-block-content {
+        width: 35.16vw;
+      }
+      .rz-mayak-about-block__title {
+        color: #181716;
+        margin-bottom: 1.666vw;
+      }
+      .rz-mayak-about-block__desc {
+        color: #181716;
+        font-size: clamp(1rem, 1.45vw, 28px); /* 28px */
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+        word-wrap: break-word;
+        margin-bottom: 1.25vw;
+      }
+      .rz-mayak-about-block__goal {
+        color: #181716;
+        width: 85%;
+        font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+        font-family: "Montserrat", Arial, sans-serif;
+        line-height: 1.2;
+        letter-spacing: 0.36px;
+        word-wrap: break-word;
+      }
+      /* 2 - css - О проекте - end */
+
+      /* 3 - css - Преимущества */
+      .rz-mayak-advantages-block {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+      }
+      .rz-mayak-advantages-block__title {
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+        color: #fff;
+        width: 8.75vw;
+        margin-right: 4vw !important;
+      }
+      .rz-mayak-advantages-block__container {
+        width: 62.24vw;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625vw;
+      }
+      .rz-mayak-advantages-block__row {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1.5625vw;
+      }
+      .rz-mayak-advantages-block-item--small {
+        flex-basis: 30%;
+      }
+      .rz-mayak-advantages-block-item--long {
+        flex-basis: 40%;
+      }
+      .rz-mayak-advantages-block-item--builder-img {
+        background-image: url("assets/builder@15x.png");
+      }
+      .rz-mayak-advantages-block-item--network-img {
+        background-image: url("assets/network@15x.png");
+      }
+      /* 3 - css - Преимущества - end */
     </style>
-</head>
-<body>
+  </head>
+  <body>
     <!-- 1 - Баннер -->
-    <div class="rz-mayak-hero">
+    <div class="rz-mayak-hero rz-mayak-section">
         <div class="rz-mayak-hero__background-image"></div>
         <div class="rz-mayak-hero__shape-1"></div>
         <div class="rz-mayak-hero__shape-2"></div>
         <h1 class="rz-mayak-hero__title">Партнерам</h1>
       </div>
     <!-- 1 - Баннер - end -->
-</body>
+
+    <!-- 2 - html - О проекте -->
+    <div class="rz-mayak-about-block rz-mayak-section">
+      <div class="rz-mayak-about-block-img"></div>
+      <div class="rz-mayak-about-block-content">
+        <div class="rz-mayak-about-block__line1"></div>
+        <div class="rz-mayak-about-block__line2"></div>
+        <div class="rz-mayak-about-block__title rz-mayak-heading">О проекте</div>
+          <div class="rz-mayak-about-block__desc">
+            «МАЯК» — всероссийская платформа для развития морской отрасли. Мы
+            создаем проект, где образование, профессиональный рост и развитие
+            индустрии идут рука об руку.
+          </div>
+          <div class="rz-mayak-about-block__goal">
+            Наша цель — формирование устойчивой среды, в которой специалисты,
+            организации и отраслевые партнеры могут обмениваться знаниями,
+            развивать компетенции и совместно формировать кадровый потенциал и
+            будущее морской индустрии.
+          </div>
+      </div>
+    </div>
+    <!-- 2 - html - О проекте - end -->
+
+    <!-- 3 - html - Преимущества -->
+    <div class="rz-mayak-advantages-block rz-mayak-section rz-mayak-block-bg-red">
+      <h2 class="rz-mayak-advantages-block__title rz-mayak-heading">Преимущества</h2>
+      <div class="rz-mayak-advantages-block__container">
+        <div class="rz-mayak-advantages-block__row">
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
+            <p class="rz-mayak-advantages-block-item__description">Реализация онлайн активностей и обучения</p>
+          </div>
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long">
+            <p class="rz-mayak-advantages-block-item__description">Управление обучением - регистрация студентов и аналитика</p>
+          </div>
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--builder-img">
+          </div>
+        </div>
+        <div class="rz-mayak-advantages-block__row">
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long">
+            <p class="rz-mayak-advantages-block-item__description">Сетевое взаимодействие и аналитика</p>
+          </div>
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
+            <p class="rz-mayak-advantages-block-item__description">Взаимодействие с ВУЗами и СУЗами</p>
+          </div>
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
+            <p class="rz-mayak-advantages-block-item__description">Мониторинг и экспертиза качества<br>обучения</p>
+          </div>
+        </div>
+        <div class="rz-mayak-advantages-block__row">
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--network-img"></div>
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
+            <p class="rz-mayak-advantages-block-item__description">База вакансий и резюме</p>
+          </div>
+          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long">
+            <p class="rz-mayak-advantages-block-item__description">Работа с рекомендательной системой</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 3 - html - Преимущества - end -->
+  </body>
 </html>
