@@ -8,7 +8,7 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&family=Oswald:wght@700&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="main.css" />
     <style>
       /* 1 - css - Баннер */
       .rz-mayak-hero {
@@ -83,7 +83,7 @@
       .rz-mayak-about-block__line1 {
         width: 100%;
         height: 9px;
-        background: #EB4040;
+        background: #eb4040;
         margin-bottom: 5px;
       }
       .rz-mayak-about-block__line2 {
@@ -158,16 +158,115 @@
         background-image: url("assets/network@15x.png");
       }
       /* 3 - css - Преимущества - end */
+
+      /* 4 - css - Каталог резюме */
+      .rz-mayak-resume-section {
+        width: 75vw; /* 1440px */
+        margin-left: auto;
+        margin-right: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        position: relative;
+      }
+
+      .rz-mayak-section-side-circle {
+        left: -42vw;
+        bottom: -31vw;
+      }
+
+      .rz-mayak-resume-header {
+        color: #181716;
+        margin-bottom: 2.8125vw !important;
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+      }
+      .rz-mayak-resume-header__link {
+        color: #eb4040;
+        font-family: "Montserrat", Arial, sans-serif;
+        font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+        font-weight: 600;
+        text-decoration: underline;
+        z-index: 2;
+      }
+      .rz-mayak-resume__cards-row {
+        display: flex;
+        flex-direction: row;
+        gap: 1.5625vw;
+        width: 100%;
+      }
+      .rz-mayak-resume-card {
+        flex-basis: 50%;
+        min-height: 21.35vw; /* 410px */
+        border: 0.16vw solid #eb4040; /* 3px */
+        display: flex;
+        flex-direction: column;
+        box-sizing: border-box;
+        padding: 1.5625vw; /* 32px */
+      }
+      .rz-mayak-resume-card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .rz-mayak-resume-card-container--horizontal {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 1.25vw; /* 24px */
+      }
+      .rz-mayak-resume-card__photo-img {
+        width: 8.33vw; /* 160px */
+        height: 8.33vw;
+        border-radius: 0;
+        object-fit: cover;
+        flex-shrink: 0;
+        background: #eee;
+      }
+      .rz-mayak-resume-card__title {
+        color: #181716;
+        font-size: 2.08vw; /* 40px */
+        font-family: RodchenkoCondBold, Arial, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        margin-bottom: 0.83vw;
+      }
+      .rz-mayak-resume-card-info {
+        display: flex;
+        flex-direction: column;
+        gap: 0.4167vw; /* 8px */
+        width: 100%;
+      }
+      .rz-mayak-resume-card-info__row {
+        font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+        line-height: 1.1;
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.36px;
+        color: #181716;
+        margin: 0 0 0.2vw 0 !important;
+      }
+      .rz-mayak-resume-card-info__row span:first-child {
+        color: #909090;
+      }
+      .rz-mayak-resume-card__contact-btn {
+        width: 100%;
+        margin-top: auto;
+      }
+      /* 4 - css - Каталог резюме - end */
     </style>
   </head>
   <body>
     <!-- 1 - Баннер -->
     <div class="rz-mayak-hero rz-mayak-section">
-        <div class="rz-mayak-hero__background-image"></div>
-        <div class="rz-mayak-hero__shape-1"></div>
-        <div class="rz-mayak-hero__shape-2"></div>
-        <h1 class="rz-mayak-hero__title">Партнерам</h1>
-      </div>
+      <div class="rz-mayak-hero__background-image"></div>
+      <div class="rz-mayak-hero__shape-1"></div>
+      <div class="rz-mayak-hero__shape-2"></div>
+      <h1 class="rz-mayak-hero__title">Партнерам</h1>
+    </div>
     <!-- 1 - Баннер - end -->
 
     <!-- 2 - html - О проекте -->
@@ -176,58 +275,192 @@
       <div class="rz-mayak-about-block-content">
         <div class="rz-mayak-about-block__line1"></div>
         <div class="rz-mayak-about-block__line2"></div>
-        <div class="rz-mayak-about-block__title rz-mayak-heading">О проекте</div>
-          <div class="rz-mayak-about-block__desc">
-            «МАЯК» — всероссийская платформа для развития морской отрасли. Мы
-            создаем проект, где образование, профессиональный рост и развитие
-            индустрии идут рука об руку.
-          </div>
-          <div class="rz-mayak-about-block__goal">
-            Наша цель — формирование устойчивой среды, в которой специалисты,
-            организации и отраслевые партнеры могут обмениваться знаниями,
-            развивать компетенции и совместно формировать кадровый потенциал и
-            будущее морской индустрии.
-          </div>
+        <div class="rz-mayak-about-block__title rz-mayak-heading">
+          О проекте
+        </div>
+        <div class="rz-mayak-about-block__desc">
+          «МАЯК» — всероссийская платформа для развития морской отрасли. Мы
+          создаем проект, где образование, профессиональный рост и развитие
+          индустрии идут рука об руку.
+        </div>
+        <div class="rz-mayak-about-block__goal">
+          Наша цель — формирование устойчивой среды, в которой специалисты,
+          организации и отраслевые партнеры могут обмениваться знаниями,
+          развивать компетенции и совместно формировать кадровый потенциал и
+          будущее морской индустрии.
+        </div>
       </div>
     </div>
     <!-- 2 - html - О проекте - end -->
 
     <!-- 3 - html - Преимущества -->
-    <div class="rz-mayak-advantages-block rz-mayak-section rz-mayak-block-bg-red">
-      <h2 class="rz-mayak-advantages-block__title rz-mayak-heading">Преимущества</h2>
+    <div
+      class="rz-mayak-advantages-block rz-mayak-section rz-mayak-block-bg-red"
+    >
+      <h2 class="rz-mayak-advantages-block__title rz-mayak-heading">
+        Преимущества
+      </h2>
       <div class="rz-mayak-advantages-block__container">
         <div class="rz-mayak-advantages-block__row">
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
-            <p class="rz-mayak-advantages-block-item__description">Реализация онлайн активностей и обучения</p>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              Реализация онлайн активностей и обучения
+            </p>
           </div>
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long">
-            <p class="rz-mayak-advantages-block-item__description">Управление обучением - регистрация студентов и аналитика</p>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              Управление обучением - регистрация студентов и аналитика
+            </p>
           </div>
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--builder-img">
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--builder-img"
+          ></div>
+        </div>
+        <div class="rz-mayak-advantages-block__row">
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              Сетевое взаимодействие и аналитика
+            </p>
+          </div>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              Взаимодействие с ВУЗами и СУЗами
+            </p>
+          </div>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              Мониторинг и экспертиза качества<br />обучения
+            </p>
           </div>
         </div>
         <div class="rz-mayak-advantages-block__row">
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long">
-            <p class="rz-mayak-advantages-block-item__description">Сетевое взаимодействие и аналитика</p>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--network-img"
+          ></div>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              База вакансий и резюме
+            </p>
           </div>
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
-            <p class="rz-mayak-advantages-block-item__description">Взаимодействие с ВУЗами и СУЗами</p>
-          </div>
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
-            <p class="rz-mayak-advantages-block-item__description">Мониторинг и экспертиза качества<br>обучения</p>
-          </div>
-        </div>
-        <div class="rz-mayak-advantages-block__row">
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--network-img"></div>
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--small">
-            <p class="rz-mayak-advantages-block-item__description">База вакансий и резюме</p>
-          </div>
-          <div class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long">
-            <p class="rz-mayak-advantages-block-item__description">Работа с рекомендательной системой</p>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--long"
+          >
+            <p class="rz-mayak-advantages-block-item__description">
+              Работа с рекомендательной системой
+            </p>
           </div>
         </div>
       </div>
     </div>
     <!-- 3 - html - Преимущества - end -->
+
+    <!-- 4 - html - Каталог резюме -->
+    <section class="rz-mayak-resume-section rz-mayak-section">
+      <img class="rz-mayak-section-side-circle" src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/699733416d500b0eaaaeb4075826b53a.png" />
+
+      <div class="rz-mayak-resume-header">
+        <div class="rz-mayak-resume-header__title rz-mayak-heading">
+          Каталог резюме
+        </div>
+        <a class="rz-mayak-resume-header__link" href="#">Перейти в раздел</a>
+      </div>
+      <div class="rz-mayak-resume__cards-row">
+        <div class="rz-mayak-resume-card">
+          <div class="rz-mayak-resume-card-container--horizontal">
+            <img
+              class="rz-mayak-resume-card__photo-img"
+              src="https://placehold.co/160x160"
+              alt="Фото кандидата"
+            />
+
+            <div class="rz-mayak-resume-card-container">
+              <div class="rz-mayak-resume-card__title">
+                Заместитель по безопасности судоходства
+              </div>
+              <div class="rz-mayak-resume-card-info">
+                <div class="rz-mayak-resume-card-info__row">
+                  Мужчина, 37 лет
+                </div>
+                <p class="rz-mayak-resume-card-info__row">
+                  <span>Высшее образование:</span>
+                  <span>
+                    Российский государственный технологический университет имени
+                    К.Э. Циолковского, Москва (Инженер-кораблестроитель)
+                  </span>
+                </p>
+                <p class="rz-mayak-resume-card-info__row">
+                  <span>Опыт работы:</span>
+                  <span> 13 лет 5 месяцев</span>
+                </p>
+                <p class="rz-mayak-resume-card-info__row">
+                  <span>Статус:</span>
+                  <span> Активно ищет работу</span>
+                </p>
+              </div>
+            </div>
+          </div>
+
+          <button
+            class="rz-mayak-resume-card__contact-btn rz-mayak-btn rz-mayak-btn--primary"
+          >
+            Связаться с кандидатом
+            <div class="rz-mayak-btn__icon"></div>
+          </button>
+        </div>
+
+        <div class="rz-mayak-resume-card">
+          <div class="rz-mayak-resume-card-container--horizontal">
+            <img
+              class="rz-mayak-resume-card__photo-img"
+              src="https://placehold.co/160x160"
+              alt="Фото кандидата"
+            />
+
+            <div class="rz-mayak-resume-card-container">
+              <div class="rz-mayak-resume-card__title">
+                Ведущий Инженер-конструктор
+              </div>
+              <div class="rz-mayak-resume-card-info">
+                <p class="rz-mayak-resume-card-info__row">Мужчина, 37 лет</p>
+                <p class="rz-mayak-resume-card-info__row">
+                  <span>Высшее образование:</span>
+                  <span>
+                    Российский государственный технологический университет имени
+                    К.Э. Циолковского, Москва (Инженер-кораблестроитель)</span
+                  >
+                </p>
+                <p class="rz-mayak-resume-card-info__row">
+                  <span>Опыт работы:</span>
+                  <span> 13 лет 5 месяцев</span>
+                </p>
+                <p class="rz-mayak-resume-card-info__row">
+                  <span>Статус:</span>
+                  <span> Активно ищет работу</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <button
+            class="rz-mayak-resume-card__contact-btn rz-mayak-btn rz-mayak-btn--primary"
+          >
+            Связаться с кандидатом
+            <div class="rz-mayak-btn__icon"></div>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- 4 - html - Каталог резюме - end -->
   </body>
 </html>

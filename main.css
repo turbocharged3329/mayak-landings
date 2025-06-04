@@ -112,4 +112,8 @@ body {
   line-height: 1.2;
   margin: 0 !important;
 }
+.rz-mayak-section-side-circle {
+  width: 37.1vw;
+  position: absolute;
+}
 /* main - css - end */
