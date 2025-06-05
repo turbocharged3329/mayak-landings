@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+    <style>
+      /* 1 - css - Баннер */
+      .rz-mayak-hero {
+        position: relative; /* Для абсолютного позиционирования дочерних элементов */
+        width: 100vw; /* Ширина на всю длину экрана */
+        height: 40.8vw; /* Высота блока */
+        overflow: hidden; /* Скрываем все, что выходит за пределы блока */
+      }
+      .rz-mayak-hero__title {
+        position: absolute;
+        bottom: 4.43vw;
+        left: 12.5vw;
+        z-index: 3;
+        margin: 0 !important;
+        color: white;
+        font-size: clamp(8.5rem, 11vw, 210px);
+        font-family: "RodchenkoCondBold", Arial, sans-serif !important;
+        font-weight: 700;
+        line-height: 88%;
+        word-wrap: break-word;
+      }
+      .rz-mayak-hero__shape-1 {
+        position: absolute; /* Абсолютное позиционирование */
+        top: 0;
+        left: -11.45vw;
+        width: 41.9vw; /* 803px относительно 1920px */
+        height: 100%; /* Высота на всю длину блока */
+        background: #e63939;
+        clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        z-index: 2; /* Устанавливаем z-index */
+      }
+      .rz-mayak-hero__shape-2 {
+        position: absolute; /* Абсолютное позиционирование */
+        top: 0;
+        right: 0; /* Справа */
+        width: 11.6vw; /* 223px относительно 1920px */
+        height: 100%; /* Высота на всю длину блока */
+        clip-path: polygon(100% 100%, 0 100%, 71.75% 50%, 0 0, 100% 0);
+        background: #f2ead7;
+        z-index: 2; /* Устанавливаем z-index */
+      }
+      .rz-mayak-hero__background-image {
+        width: 100%; /* На всю ширину блока */
+        height: 100%; /* На всю высоту блока */
+        background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/4dcb013adaa95840216dd0f769423309.png"); /* Укажите путь к изображению */
+        background-size: cover; /* Заполнение блока изображением */
+        background-position: center; /* Центрирование изображения */
+        z-index: 1; /* За фигурами */
+      }
+      /* 1 - css - Баннер - end */
+
+      /* 3 - css - Партнеры */
+      .rz-mayak-partners-section {
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+      }
+      .rz-mayak-partners-header {
+        width: 75.7vw; /* 1453px */
+        margin-top: 0;
+        margin-bottom: 3.125vw;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+      }
+      .rz-mayak-partners-header__title {
+        color: #181716;
+      }
+      .rz-mayak-partners-header__link {
+        color: #eb4040;
+        font-size: clamp(0.5rem, 0.94vw, 18px); /* 18/1920 */
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 600;
+        text-decoration: underline;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .rz-mayak-partners-logos-row {
+        width: 100%;
+        box-sizing: border-box;
+        height: 6.77vw; /* 130px */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 4.115vw; /* 78px */
+      }
+      .rz-mayak-partner-logo {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .rz-mayak-partner-logo__img {
+        display: block;
+      }
+      .rz-mayak-partner-logo__img--fisco {
+        width: 14.27vw; /* 274px */
+      }
+      .rz-mayak-partner-logo__img--osk {
+        width: 9.53vw; /* 183px */
+      }
+      .rz-mayak-partner-logo__img--mtu {
+        width: 9.375vw; /* 180px */
+      }
+      .rz-mayak-partner-logo__img--kmp {
+        width: 17.6vw; /* 338px */
+      }
+      .rz-mayak-partner-logo__img--petr_college {
+        width: 10.68vw; /* 205px */
+      }
+      /* 3 - css -end - Партнеры */
+
+      /* 4 - css - Преимущества */
+      .rz-mayak-advantages-block {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 8.333vw 12.5vw; /* 160px 240px */
+        box-sizing: border-box;
+      }
+      .rz-mayak-advantages-block__title {
+        color: #fff;
+        margin-bottom: 2.1vw !important; /* 40px */
+      }
+      .rz-mayak-advantages-block__container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: 1.5625vw;
+      }
+      .rz-mayak-advantages-block__row {
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 1.5625vw;
+      }
+      .rz-mayak-advantages-block-item {
+        flex-basis: 33.33%;
+      }
+      .rz-mayak-advantages-block-item--builder-img {
+        background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/7148c30813d7ddcb3ed7a5cb55b156e9.png");
+      }
+      .rz-mayak-advantages-block-item--students-img {
+        background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/2135aa33b74aeaca1dd704d33018046f.png");
+      }
+      /* 4 - css - end - Преимущества */
+    </style>
+  </head>
+
+  <body>
+    <!-- 1 - Баннер -->
+    <div class="rz-mayak-hero rz-mayak-section">
+      <div class="rz-mayak-hero__background-image"></div>
+      <div class="rz-mayak-hero__shape-1"></div>
+      <div class="rz-mayak-hero__shape-2"></div>
+      <h1 class="rz-mayak-hero__title">Соискателям</h1>
+    </div>
+    <!-- 1 - Баннер - end -->
+
+    <!-- 3 - html - Партнеры -->
+    <section class="rz-mayak-partners-section rz-mayak-section">
+      <div class="rz-mayak-partners-header">
+        <div class="rz-mayak-partners-header__title rz-mayak-heading">
+          Партнеры
+        </div>
+        <a class="rz-mayak-partners-header__link" href="#">Все партнеры</a>
+      </div>
+      <div class="rz-mayak-partners-logos-row">
+        <div class="rz-mayak-partner-logo">
+          <img
+            class="rz-mayak-partner-logo__img rz-mayak-partner-logo__img--fisco"
+            src="assets/partners/fesco@2x.png"
+          />
+        </div>
+        <div class="rz-mayak-partner-logo">
+          <img
+            class="rz-mayak-partner-logo__img rz-mayak-partner-logo__img--osk"
+            src="assets/partners/osk@2x.png"
+          />
+        </div>
+        <div class="rz-mayak-partner-logo">
+          <img
+            class="rz-mayak-partner-logo__img rz-mayak-partner-logo__img--mtu"
+            src="assets/partners/mtu@2x.png"
+            alt="logo1"
+          />
+        </div>
+        <div class="rz-mayak-partner-logo">
+          <img
+            class="rz-mayak-partner-logo__img rz-mayak-partner-logo__img--kmp"
+            src="assets/partners/kmp@2x.png"
+            alt="logo2"
+          />
+        </div>
+        <div class="rz-mayak-partner-logo">
+          <img
+            class="rz-mayak-partner-logo__img rz-mayak-partner-logo__img--petr_college"
+            src="assets/partners/petr_college@2x.png"
+            alt="logo3"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- 3 - html - end - Партнеры -->
+
+    <!-- 4 - html - Преимущества -->
+    <div
+      class="rz-mayak-advantages-block rz-mayak-section rz-mayak-block-bg-red"
+    >
+      <h2 class="rz-mayak-advantages-block__title rz-mayak-heading">
+        Преимущества
+      </h2>
+      <div class="rz-mayak-advantages-block__container">
+        <div class="rz-mayak-advantages-block__row">
+          <div class="rz-mayak-advantages-block-item">
+            <p class="rz-mayak-advantages-block-item__description">
+              Работа с<br />рекомендательной базой
+            </p>
+          </div>
+          <div class="rz-mayak-advantages-block-item">
+            <p class="rz-mayak-advantages-block-item__description">
+              Личный рейтинг и<br />активности
+            </p>
+          </div>
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--builder-img"
+          ></div>
+        </div>
+        <div class="rz-mayak-advantages-block__row">
+          <div
+            class="rz-mayak-advantages-block-item rz-mayak-advantages-block-item--image rz-mayak-advantages-block-item--students-img"
+          ></div>
+          <div class="rz-mayak-advantages-block-item">
+            <p class="rz-mayak-advantages-block-item__description">
+              Доступ к проектам<br />
+              партнеров
+            </p>
+          </div>
+          <div class="rz-mayak-advantages-block-item">
+            <p class="rz-mayak-advantages-block-item__description">
+              Личное портфолио и<br />резюме
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- 4 - html - Преимущества - end -->
+  </body>
+</html>
