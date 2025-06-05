@@ -9,7 +9,7 @@
       /* 1 - css - Баннер */
       .rz-mayak-hero {
         position: relative; /* Для абсолютного позиционирования дочерних элементов */
-        width: 100vw; /* Ширина на всю длину экрана */
+        width: 100%;
         height: 40.8vw; /* Высота блока */
         overflow: hidden; /* Скрываем все, что выходит за пределы блока */
       }
@@ -56,9 +56,72 @@
       }
       /* 1 - css - Баннер - end */
 
+      /* 2 - css - О проекте */
+      .rz-mayak-about-block {
+        width: 75vw;
+        height: 24.9vw; /* 478 */
+        display: flex;
+        align-items: stretch;
+        gap: 1.5625vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .rz-mayak-about-block-img {
+        width: 36.72vw;
+        height: 100%;
+        object-fit: cover;
+        box-shadow: 0px 0.21vw 3.33vw rgba(0, 0, 0, 0.1);
+        z-index: 1;
+        background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/db9e93a341c35c5b6e1b23802d322009.png");
+        background-size: cover;
+        background-position: center;
+      }
+      .rz-mayak-about-block__line1 {
+        width: 100%;
+        height: 9px;
+        background: #eb4040;
+        margin-bottom: 5px;
+      }
+      .rz-mayak-about-block__line2 {
+        width: 100%;
+        height: 3px;
+        background: #181716;
+        margin-bottom: 2.83vw;
+      }
+      .rz-mayak-about-block-content {
+        width: 35.16vw;
+      }
+      .rz-mayak-about-block__title {
+        color: #181716;
+        margin-bottom: 1.25vw;
+        font-family: "RodchenkoCondBold", Arial, sans-serif;
+        font-size: clamp(1.5rem, 5.73vw, 110px); /* 110/1920 */
+        font-weight: 700;
+        line-height: 0.9;
+      }
+      .rz-mayak-about-block__desc {
+        color: #181716;
+        font-size: clamp(1rem, 1.45vw, 28px); /* 28px */
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: 400;
+        line-height: 1.2;
+        word-wrap: break-word;
+        margin-bottom: 1.25vw;
+      }
+      .rz-mayak-about-block__goal {
+        color: #181716;
+        width: 85%;
+        font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+        font-family: "Montserrat", Arial, sans-serif;
+        line-height: 1.2;
+        letter-spacing: 0.36px;
+        word-wrap: break-word;
+      }
+      /* 2 - css - О проекте - end */
+
       /* 3 - css - Партнеры */
       .rz-mayak-partners-section {
-        width: 100vw;
+        width: 100%;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -156,6 +219,122 @@
         background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/2135aa33b74aeaca1dd704d33018046f.png");
       }
       /* 4 - css - end - Преимущества */
+
+      /* 5 - css - Это интересно */
+      .rz-mayak-its-interesting-block {
+        width: 82.5vw; /* 1584/1920 */
+        margin-left: auto;
+        margin-right: auto;
+        background: #eb4040;
+        padding: 2.1vw 3.75vw 3.125vw;
+        box-sizing: border-box;
+      }
+      .rz-mayak-its-interesting-block__title {
+        font-family: "RodchenkoCondBold", Arial, sans-serif;
+        font-weight: 700;
+        color: #fff;
+        font-size: 8.75vw; /* 168/1920 */
+        line-height: 1;
+        word-wrap: break-word;
+        margin-bottom: 1.7vw !important;
+        text-align: center;
+      }
+      .rz-mayak-its-interesting-block__line1 {
+        width: 100%;
+        height: 9px;
+        background: #fff8e7;
+        margin-bottom: 5px;
+      }
+      .rz-mayak-its-interesting-block__line2 {
+        width: 100%;
+        height: 3px;
+        background: #fff8e7;
+        margin-bottom: 2.1vw;
+      }
+      .rz-mayak-its-interesting-block__cards-row {
+        width: 100%; /* 1458/1920 */
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        gap: 1.56vw; /* 30/1920 */
+      }
+      .rz-mayak-its-interesting-card {
+        display: flex;
+        flex-basis: 50%;
+      }
+
+      .rz-mayak-its-interesting-card-info {
+        height: 19.3vw; /* 370/1920 */
+        background: #fff8e7;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        gap: 0.52vw; /* 10/1920 */
+        box-sizing: border-box;
+        padding: 2.55vw 1.67vw;
+      }
+      .rz-mayak-its-interesting-card-info__container {
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .rz-mayak-its-interesting-card-info__title {
+        width: 18.2vw; /* 349/1920 */
+        color: #181716;
+        font-size: 2.5vw; /* 48/1920 */
+        font-family: "RodchenkoCondBold", Arial, sans-serif;
+        font-weight: 700;
+        line-height: 2.5vw; /* 48/1920 */
+        word-wrap: break-word;
+        margin-bottom: 0.83vw; /* 16/1920 */
+      }
+      .rz-mayak-its-interesting-card-info__description {
+        align-self: stretch;
+        color: #181716;
+        font-size: 0.94vw; /* 18/1920 */
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.019vw; /* 0.36/1920 */
+        word-wrap: break-word;
+      }
+      .rz-mayak-its-interesting-card-info__more-btn {
+        margin-top: auto;
+      }
+      .rz-mayak-its-interesting-card__img {
+        flex: 1 1 0;
+        height: 19.3vw; /* 370/1920 */
+        object-fit: cover;
+        background: linear-gradient(0deg, 0%, 100%);
+        background-blend-mode: overlay, color, normal;
+        display: block;
+      }
+
+      /* Стили для белого блока */
+      .rz-mayak-its-interesting-block--white {
+        background: #fff8e7;
+      }
+
+      .rz-mayak-its-interesting-block--white
+        .rz-mayak-its-interesting-block__line1 {
+        background: #eb4040;
+      }
+      .rz-mayak-its-interesting-block--white
+        .rz-mayak-its-interesting-block__line2 {
+        background: #181716;
+      }
+      .rz-mayak-its-interesting-block--white
+        .rz-mayak-its-interesting-block__title {
+        color: #181716;
+      }
+      .rz-mayak-its-interesting-block--white .rz-mayak-its-interesting-card {
+        border: 3px solid #eb4040;
+      }
+      /*  */
+
+      /* 5 - css - end */
     </style>
   </head>
 
@@ -168,6 +347,24 @@
       <h1 class="rz-mayak-hero__title">Соискателям</h1>
     </div>
     <!-- 1 - Баннер - end -->
+
+    <!-- 2 - html - О проекте -->
+    <div class="rz-mayak-about-block rz-mayak-section">
+      <div class="rz-mayak-about-block-img"></div>
+      <div class="rz-mayak-about-block-content">
+        <div class="rz-mayak-about-block__line1"></div>
+        <div class="rz-mayak-about-block__line2"></div>
+        <div class="rz-mayak-about-block__title">
+          Карьера в море - путь к новым возможностям!
+        </div>
+        <div class="rz-mayak-about-block__goal">
+          Морская индустрия — это стабильная работа, хороший<br />доход и шанс
+          увидеть мир. Здесь вы не просто<br />развиваетесь как специалист — вы
+          становитесь частью настоящих приключений.
+        </div>
+      </div>
+    </div>
+    <!-- 2 - html - О проекте - end -->
 
     <!-- 3 - html - Партнеры -->
     <section class="rz-mayak-partners-section rz-mayak-section">
@@ -257,5 +454,60 @@
       </div>
     </div>
     <!-- 4 - html - Преимущества - end -->
+
+    <!-- 5 - html - Это интересно - белый блок -->
+    <div
+      class="rz-mayak-its-interesting-block rz-mayak-section rz-mayak-its-interesting-block--white"
+    >
+      <div class="rz-mayak-its-interesting-block__title rz-mayak-heading">
+        Это интересно
+      </div>
+      <div class="rz-mayak-its-interesting-block__line1"></div>
+      <div class="rz-mayak-its-interesting-block__line2"></div>
+
+      <div class="rz-mayak-its-interesting-block__cards-row">
+        <div class="rz-mayak-its-interesting-card">
+          <div class="rz-mayak-its-interesting-card-info">
+            <div class="rz-mayak-its-interesting-card-info__container">
+              <div class="rz-mayak-its-interesting-card-info__title">
+                Оценка компетенций
+              </div>
+              <button
+                class="rz-mayak-its-interesting-card-info__more-btn rz-mayak-btn rz-mayak-btn--primary"
+              >
+                Подробнее
+                <div class="rz-mayak-btn__icon"></div>
+              </button>
+            </div>
+          </div>
+          <img
+            class="rz-mayak-its-interesting-card__img"
+            src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/449dad5a37f51e5c0f361108a5f57d42.png"
+            alt=""
+          />
+        </div>
+        <div class="rz-mayak-its-interesting-card">
+          <div class="rz-mayak-its-interesting-card-info">
+            <div class="rz-mayak-its-interesting-card-info__container">
+              <div class="rz-mayak-its-interesting-card-info__title">
+                Мероприятия
+              </div>
+              <button
+                class="rz-mayak-its-interesting-card-info__more-btn rz-mayak-btn rz-mayak-btn--primary"
+              >
+                Подробнее
+                <div class="rz-mayak-btn__icon"></div>
+              </button>
+            </div>
+          </div>
+          <img
+            class="rz-mayak-its-interesting-card__img"
+            src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/609541e2cad709dbcf2d070268b9d974.png"
+            alt="Колледж"
+          />
+        </div>
+      </div>
+    </div>
+    <!-- 5 - html - end -->
   </body>
 </html>
