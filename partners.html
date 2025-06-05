@@ -62,13 +62,20 @@
 
       /* 2 - css - О проекте */
       .rz-mayak-about-block {
-        width: 75vw;
+        width: 100%;
+        display: flex;
+        justify-content: center;
         height: 26.46vw; /* например, 508px относительно 1920px */
         display: flex;
         align-items: stretch;
         gap: 1.5625vw;
         margin-left: auto;
         margin-right: auto;
+        position: relative;
+      }
+      .rz-mayak-about-block .rz-mayak-section-side-circle {
+        right: 0vw;
+        bottom: -17vw;
       }
       .rz-mayak-about-block-img {
         width: 36.72vw;
@@ -76,7 +83,7 @@
         object-fit: cover;
         box-shadow: 0px 0.21vw 3.33vw rgba(0, 0, 0, 0.1);
         z-index: 1;
-        background-image: url("https://placehold.co/705x508");
+        background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/66bfd345a273b7d603dc61d47a6d3a75.png");
         background-size: cover;
         background-position: center;
       }
@@ -170,7 +177,7 @@
         position: relative;
       }
 
-      .rz-mayak-section-side-circle {
+      .rz-mayak-resume-section .rz-mayak-section-side-circle {
         left: -42vw;
         bottom: -31vw;
       }
@@ -271,6 +278,11 @@
 
     <!-- 2 - html - О проекте -->
     <div class="rz-mayak-about-block rz-mayak-section">
+      <img
+        class="rz-mayak-section-side-circle rz-mayak-section-side-circle--right"
+        src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/63ce159086dcb2aa95f620037b8f2e86.png"
+      />
+
       <div class="rz-mayak-about-block-img"></div>
       <div class="rz-mayak-about-block-content">
         <div class="rz-mayak-about-block__line1"></div>
@@ -368,7 +380,10 @@
 
     <!-- 4 - html - Каталог резюме -->
     <section class="rz-mayak-resume-section rz-mayak-section">
-      <img class="rz-mayak-section-side-circle" src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/699733416d500b0eaaaeb4075826b53a.png" />
+      <img
+        class="rz-mayak-section-side-circle"
+        src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/699733416d500b0eaaaeb4075826b53a.png"
+      />
 
       <div class="rz-mayak-resume-header">
         <div class="rz-mayak-resume-header__title rz-mayak-heading">
