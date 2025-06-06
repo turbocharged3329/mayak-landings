@@ -554,6 +554,8 @@
         outline: 0.26vw solid #eb4040; /* 5/1920 */
         position: relative;
         box-sizing: border-box;
+        position: relative;
+        z-index: 2;
       }
       .rz-mayak-profile-block__aside {
         position: absolute;
@@ -563,7 +565,7 @@
         height: 16vw;
         background: #fff8e7;
         clip-path: polygon(0 0, 0 100%, 100% 0);
-        z-index: -1;
+        z-index: 1;
       }
       .rz-mayak-profile-block__container {
         flex: 1 1 0;
@@ -571,6 +573,7 @@
         flex-direction: column;
         padding: 2.45vw 3.75vw 3.75vw; /* 47/1920 72/1920 */
         z-index: 2;
+        background: #fff;
       }
       .rz-mayak-profile-block__title {
         font-family: "RodchenkoCondBold", Arial, sans-serif;
@@ -582,6 +585,7 @@
         color: #eb4040;
         text-align: right;
         margin-bottom: 1.35vw;
+        z-index: 2;
       }
       .rz-mayak-profile-block__bottom-row {
         width: 100%;
@@ -753,7 +757,7 @@
       </div>
       <img
         class="rz-mayak-what-is-mayak-block__rect"
-        src="assets/rect1.png"
+        src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/1d6ff1242b5ce03b661cb2cb2c69bf8a.png"
         alt=""
       />
     </section>
@@ -775,10 +779,7 @@
               с элементами очной работы или офлайн-практикумы
             </div>
           </div>
-          <a
-            class="rz-mayak-btn rz-mayak-btn--primary"
-            href="/p/obrazovanie"
-          >
+          <a class="rz-mayak-btn rz-mayak-btn--primary" href="/p/obrazovanie">
             Подробнее
             <div class="rz-mayak-btn__icon"></div>
           </a>
@@ -795,10 +796,7 @@
               актуальные вакансии
             </div>
           </div>
-          <a
-            class="rz-mayak-btn rz-mayak-btn--primary"
-            href="/p/karera-v-more"
-          >
+          <a class="rz-mayak-btn rz-mayak-btn--primary" href="/p/karera-v-more">
             Подробнее
             <div class="rz-mayak-btn__icon"></div>
           </a>
@@ -1061,6 +1059,11 @@
           </a>
         </div>
       </div>
+      <!-- <img
+        class="rz-mayak-profile-block__rect"
+        src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/1d6ff1242b5ce03b661cb2cb2c69bf8a.png"
+        alt=""
+      /> -->
     </section>
     <!--  -->
   </body>
