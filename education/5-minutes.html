@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>5 минут</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      /* 5 - css - Хотите работать в море - end */
+      .rz-mayak-wanna-work-block {
+        width: 82.5vw; /* 1584px */
+        height: 36.4vw;
+        position: relative;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .rz-mayak-wanna-work-block__img {
+        width: 53.17vw;
+        height: 36.4vw;
+        left: 33.8vw;
+        top: 0;
+        position: absolute;
+        object-fit: contain;
+        background: linear-gradient(
+          139deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        );
+        background-blend-mode: color-burn, normal;
+        z-index: 1;
+      }
+      .rz-mayak-wanna-work-block__skew {
+        position: absolute;
+        left: -14vw; /* смещаем влево, чтобы скрыть скос */
+        top: 0px;
+        width: 58vw; /* увеличиваем ширину */
+        height: 36.4vw;
+        background: #eb4040;
+        transform: skewX(-12deg);
+        z-index: 2;
+      }
+      .rz-mayak-wanna-work-block-content {
+        width: 76.56vw;
+        left: 3.75%;
+        top: 120px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: inline-flex;
+        z-index: 3;
+      }
+      .rz-mayak-wanna-work-block-content__title {
+        width: 52.7vw;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        color: #fff;
+        font-size: clamp(4rem, 5.7vw, 110px);
+        font-family: RodchenkoCondBold, Arial, sans-serif;
+        font-weight: 700;
+        line-height: 0.9;
+        word-wrap: break-word;
+        margin-bottom: 2.5vw;
+      }
+      .rz-mayak-wanna-work-block-content__container {
+        width: 34.3vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+      }
+      .rz-mayak-wanna-work-block-content__description {
+        align-self: stretch;
+        color: #fff;
+        font-size: clamp(0.875rem, 1.45vw, 1.75rem);
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+        margin-bottom: 2.5vw;
+      }
+
+      .rz-mayak-wanna-work-block-content__btn {
+        width: 73.7%;
+        background: #fff !important;
+      }
+      /* 5 - css - end */
+    </style>
+  </head>
+
+  <body>
+    <!-- 5 - html - 5 минут -->
+    <div class="rz-mayak-wanna-work-block rz-mayak-section">
+      <img
+        class="rz-mayak-wanna-work-block__img"
+        src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/fe36a01b6c426f83a229b7c6f17019bf.png"
+        alt=""
+      />
+      <div class="rz-mayak-wanna-work-block__skew"></div>
+      <div class="rz-mayak-wanna-work-block-content">
+        <div class="rz-mayak-wanna-work-block-content__title">
+          5 минут — и вы узнаете<br />своё призвание
+        </div>
+        <div class="rz-mayak-wanna-work-block-content__container">
+          <div class="rz-mayak-wanna-work-block-content__description">
+            Тест поможет определить, какая роль в<br />морской индустрии вам
+            ближе: инженер,<br />штурман, исследователь? Проверьте!
+          </div>
+
+          <a
+            class="rz-mayak-wanna-work-block-content__btn rz-mayak-btn rz-mayak-btn--secondary rz-mayak-btn--lg"
+            href="/p/proforientacia"
+          >
+            Начать тестирование
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 5 - html - end -->
+  </body>
+</html>

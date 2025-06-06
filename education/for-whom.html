@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <style>
+    /* 3 - css - Для кого */
+    .rz-mayak-for-whom-block {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+    }
+    .rz-mayak-for-whom-block__title {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: #181716;
+      width: 8.75vw;
+      white-space: nowrap;
+      margin-right: 4vw !important;
+    }
+    .rz-mayak-for-whom-block__cards-row {
+      width: 62.24vw; /* 1195/1920 */
+      height: 26.72vw; /* 513/1920 */
+      display: flex;
+      flex-direction: row;
+      gap: 1.56vw; /* 30/1920 */
+      justify-content: flex-start;
+      align-items: center;
+    }
+    .rz-mayak-for-whom-block-card {
+      flex: 1 1 0;
+      align-self: stretch;
+      padding: 1.25vw; /* 24/1920 */
+      background: #fff8e7;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: flex-start;
+      box-sizing: border-box;
+    }
+    .rz-mayak-for-whom-block-card__icon {
+      width: 5.2vw; /* 100/1920 */
+      height: 5.2vw; /* 100/1920 */
+      background-size: contain !important;
+    }
+    .rz-mayak-for-whom-block-card__icon--1 {
+      background: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/b51a07b863a635fb9c50e5dac2359ccf.png");   
+    }
+    .rz-mayak-for-whom-block-card__icon--2 {
+      background: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/7cb4a2d32808b3af4bd8eacfb8f4dffc.png");
+    }
+    .rz-mayak-for-whom-block-card__icon--3 {
+      background: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/cd38a5ecad77fc455698341096c80dfa.png");
+    }
+    .rz-mayak-for-whom-block-card__content {
+      display: flex;
+      flex-direction: column;
+      gap: 0.83vw; /* 16/1920 */
+    }
+    .rz-mayak-for-whom-block-card__title {
+      color: #eb4040;
+    }
+    .rz-mayak-for-whom-block-card__desc {
+      width: 97.27%; /* 321/1920 */
+      color: #181716;
+      font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+      font-family: Montserrat, Arial, sans-serif;
+      font-weight: 400;
+      letter-spacing: 0.019vw; /* 0.36/1920 */
+      word-wrap: break-word;
+    }
+    /* 3 - css - Для кого - end */
+  </style>
+
+  <body>
+    <!-- 3 - html - Для кого -->
+    <section class="rz-mayak-for-whom-block rz-mayak-section">
+      <div class="rz-mayak-for-whom-block__title rz-mayak-heading">Для кого</div>
+      <div class="rz-mayak-for-whom-block__cards-row">
+        <div class="rz-mayak-for-whom-block-card">
+          <div class="rz-mayak-for-whom-block-card__icon rz-mayak-for-whom-block-card__icon--1"></div>
+          <div class="rz-mayak-for-whom-block-card__content">
+            <div class="rz-mayak-for-whom-block-card__title rz-mayak-card-title">Школьникам и студентам</div>
+            <div class="rz-mayak-for-whom-block-card__desc">
+              Знакомство с морскими профессиями и выбор будущей специальности
+            </div>
+          </div>
+        </div>
+        <div class="rz-mayak-for-whom-block-card">
+          <div class="rz-mayak-for-whom-block-card__icon rz-mayak-for-whom-block-card__icon--2"></div>
+          <div class="rz-mayak-for-whom-block-card__content">
+            <div class="rz-mayak-for-whom-block-card__title rz-mayak-card-title">
+              Молодым специалистам<br />и сотрудникам
+            </div>
+            <div class="rz-mayak-for-whom-block-card__desc">
+              Старт карьеры в индустрии, развитие навыков и переквалификация
+            </div>
+          </div>
+        </div>
+        <div class="rz-mayak-for-whom-block-card">
+          <div class="rz-mayak-for-whom-block-card__icon rz-mayak-for-whom-block-card__icon--3"></div>
+          <div class="rz-mayak-for-whom-block-card__content">
+            <div class="rz-mayak-for-whom-block-card__title rz-mayak-card-title">Работодателям и предприятиям</div>
+            <div class="rz-mayak-for-whom-block-card__desc">
+              Поиск и подготовка квалифицированных кадров
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- 3 - html - Для кого - end -->
+  </body>
+</html>
