@@ -58,6 +58,9 @@ body {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
   text-decoration: none !important;
 }
+.rz-mayak-btn--p-events-none {
+  pointer-events: none !important;
+}
 .rz-mayak-btn__icon {
   width: 0.7vw;
   height: 0.7vw;
