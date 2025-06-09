@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Мероприятия</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      /* 7 - css - Мероприятия */
+      .rz-mayak-events-section {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+      }
+      .rz-mayak-events-section-header {
+        width: 75vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+      }
+      .rz-mayak-events-section-header__title {
+        margin-bottom: 2.08vw !important;
+      }
+      .rz-mayak-events-section-header__link {
+        color: #eb4040;
+        font-size: clamp(0.5rem, 0.94vw, 18px); /* 18/1920 */
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 400;
+        text-decoration: underline;
+        cursor: pointer;
+        white-space: nowrap;
+      }
+      .rz-mayak-events-section__cards-row {
+        width: 75vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        gap: 1.5625vw; /* 30/1920 */
+      }
+      .rz-mayak-events-section-card {
+        flex-basis: calc(100% /3); /* 460/1920 */
+        height: 17.76vw; /* 341/1920 */
+        padding: 1.25vw; /* 24/1920 */
+        background: #fff8e7;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        box-sizing: border-box;
+      }
+      .rz-mayak-events-section-card__title {
+        color: #eb4040;
+        margin-bottom: 0.83vw; /* 16/1920 */
+      }
+      .rz-mayak-events-section-card__container {
+        display: flex;
+        flex-direction: row;
+        gap: 0.83vw; /* 16/1920 */
+        margin-bottom: 1.25vw;
+      }
+      .rz-mayak-events-section-card__tag {
+        color: #181716;
+        font-size: clamp(0.75rem, 0.9375vw, 18px);
+        font-family: "Montserrat", Arial, sans-serif;
+        font-weight: 400;
+        letter-spacing: 0.019vw; /* 0.36/1920 */
+        word-wrap: break-word;
+      }
+      .rz-mayak-events-section-card__btn {
+        margin-top: auto;
+        width: 100%;
+      }
+      /* 7 - css - Мероприятия - end */
+    </style>
+  </head>
+
+  <body>
+    <!-- 7 - html - Мероприятия -->
+    <section class="rz-mayak-events-section">
+      <div class="rz-mayak-events-section-header">
+        <h2 class="rz-mayak-events-section-header__title rz-mayak-heading">Мероприятия</h2>
+        <a class="rz-mayak-events-section-header__link" href="/p/meropriatia-obsij">Смотреть Афишу</a>
+      </div>
+      <div class="rz-mayak-events-section__cards-row">
+        <div class="rz-mayak-events-section-card">
+          <div class="rz-mayak-events-section-card__title rz-mayak-card-title">
+            Образовательная программа "ТехНет"
+          </div>
+          <div class="rz-mayak-events-section-card__container">
+            <div class="rz-mayak-events-section-card__tag">#Онлайн-события</div>
+            <div class="rz-mayak-events-section-card__tag">#Профориентация</div>
+          </div>
+          <a
+            class="rz-mayak-events-section-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/obrazovatelnaa-programma-tehnet"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-events-section-card">
+          <div class="rz-mayak-events-section-card__title rz-mayak-card-title">Инженеры будущего</div>
+          <div class="rz-mayak-events-section-card__container">
+            <div class="rz-mayak-events-section-card__tag">#Онлайн-события</div>
+            <div class="rz-mayak-events-section-card__tag">#Профориентация</div>
+          </div>
+          <a
+            class="rz-mayak-events-section-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/inzinery-budusego"
+          >
+            Подробнее
+          <div class="rz-mayak-btn__icon"></div>
+        </a>
+        </div>
+        <div class="rz-mayak-events-section-card">
+          <div class="rz-mayak-events-section-card__title rz-mayak-card-title">
+            III Форум <br />«Арктика - Регионы»
+          </div>
+          <div class="rz-mayak-events-section-card__container">
+            <div class="rz-mayak-events-section-card__tag">#Онлайн-события</div>
+            <div class="rz-mayak-events-section-card__tag">#Профориентация</div>
+          </div>
+          <a
+            class="rz-mayak-events-section-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/iii-forum-arktika-regiony"
+          >
+            Подробнее
+          <div class="rz-mayak-btn__icon"></div>
+        </a>
+        </div>
+      </div>
+    </section>
+    <!-- 7 - html - Мероприятия - end -->
+  </body>
+</html>
