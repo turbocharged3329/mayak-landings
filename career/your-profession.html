@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      /* 3 - css - Хотите работать в море - end */
+      .rz-mayak-wanna-work-block {
+        width: 82.5vw; /* 1584px */
+        height: 36.4vw;
+        position: relative;
+        overflow: hidden;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .rz-mayak-wanna-work-block__img {
+        width: 53.17vw;
+        height: 36.4vw;
+        left: 28.8vw;
+        top: 0;
+        position: absolute;
+        object-fit: cover;
+        background: linear-gradient(
+          139deg,
+          rgba(255, 255, 255, 0.2) 0%,
+          rgba(0, 0, 0, 0.2) 100%
+        );
+        background-blend-mode: color-burn, normal;
+        z-index: 1;
+      }
+      .rz-mayak-wanna-work-block__skew {
+        position: absolute;
+        left: -6.7vw; /* смещаем влево, чтобы скрыть скос */
+        top: 0px;
+        width: 51.3vw; /* увеличиваем ширину */
+        height: 36.4vw;
+        background: #fff8e7;
+        transform: skewX(-9deg);
+        z-index: 2;
+      }
+      .rz-mayak-wanna-work-block-content {
+        width: 76.56vw;
+        left: 3.75vw;
+        top: 120px;
+        position: absolute;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: inline-flex;
+        z-index: 3;
+      }
+      .rz-mayak-wanna-work-block-content__title {
+        width: 52.7vw;
+        justify-content: flex-end;
+        display: flex;
+        flex-direction: column;
+        color: #181716;
+        font-size: clamp(4rem, 5.7vw, 110px);
+        font-family: RodchenkoCondBold, Arial, sans-serif;
+        font-weight: 700;
+        line-height: 0.9;
+        word-wrap: break-word;
+        margin-bottom: 2.5vw;
+      }
+      .rz-mayak-wanna-work-block-content__container {
+        width: 34.3vw;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        display: flex;
+      }
+      .rz-mayak-wanna-work-block-content__description {
+        align-self: stretch;
+        color: #181716;
+        font-size: clamp(0.875rem, 1.45vw, 1.75rem);
+        font-family: Montserrat, Arial, sans-serif;
+        font-weight: 400;
+        word-wrap: break-word;
+        margin-bottom: 2.5vw;
+      }
+
+      .rz-mayak-wanna-work-block-content__btn {
+        width: 73.7%;
+      }
+      /* 3 - css - end */
+    </style>
+  </head>
+  <body>
+    <!-- 3 - html - Хотите работать в море, но не знаете кем? -->
+    <div class="rz-mayak-wanna-work-block rz-mayak-section">
+      <img
+        class="rz-mayak-wanna-work-block__img"
+        src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/95c6f7345f18dbad52dd6436331a0669.png"
+        alt=""
+      />
+      <div class="rz-mayak-wanna-work-block__skew"></div>
+      <div class="rz-mayak-wanna-work-block-content">
+        <div class="rz-mayak-wanna-work-block-content__title">
+          Ваша профессия — там,<br />где начинается путь
+        </div>
+        <div class="rz-mayak-wanna-work-block-content__container">
+          <div class="rz-mayak-wanna-work-block-content__description">
+            Морская отрасль предлагает десятки<br />направлений. Пройдите тест и
+            узнайте, <br />в каком из них вы сможете раскрыться.
+          </div>
+
+          <a
+            class="rz-mayak-wanna-work-block-content__btn rz-mayak-btn rz-mayak-btn--primary rz-mayak-btn--lg"
+            href="/p/proforientacia"
+          >
+            Начать тестирование
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 3 - html - end -->
+  </body>
+</html>
