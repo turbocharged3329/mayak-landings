@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      /* 1 - css - Баннер */
+      .rz-mayak-hero {
+        position: relative; /* Для абсолютного позиционирования дочерних элементов */
+        width: 100%; /* Ширина на всю длину экрана */
+        height: 40.8vw; /* Высота блока */
+        overflow: hidden; /* Скрываем все, что выходит за пределы блока */
+      }
+      .rz-mayak-hero__title {
+        position: absolute;
+        bottom: 10.1vw;
+        left: 12.5vw;
+        z-index: 3;
+        margin: 0 !important;
+        color: white;
+        font-size: clamp(8.5rem, 11vw, 210px);
+        font-family: "RodchenkoCondBold", Arial, sans-serif !important;
+        font-weight: 700;
+        line-height: 88%;
+        word-wrap: break-word;
+      }
+      .rz-mayak-hero__subtitle {
+        color: white;
+        position: absolute;
+        bottom: 4.58vw;
+        left: 12.5vw;
+        z-index: 3;
+        font-size: 2.083vw;
+        font-family: Montserrat, sans-serif;
+        font-weight: 400;
+        line-height: 1;
+        word-wrap: break-word;
+        margin: 0 !important;
+      }
+      .rz-mayak-hero__shape-1 {
+        position: absolute; /* Абсолютное позиционирование */
+        top: 0;
+        left: -11.45vw;
+        width: 41.9vw; /* 803px относительно 1920px */
+        height: 100%; /* Высота на всю длину блока */
+        background: #e63939;
+        clip-path: polygon(0 0, 85% 0, 100% 50%, 85% 100%, 0 100%);
+        z-index: 2; /* Устанавливаем z-index */
+      }
+      .rz-mayak-hero__shape-2 {
+        position: absolute; /* Абсолютное позиционирование */
+        top: 0;
+        right: 0; /* Справа */
+        width: 11.6vw; /* 223px относительно 1920px */
+        height: 100%; /* Высота на всю длину блока */
+        clip-path: polygon(100% 100%, 0 100%, 71.75% 50%, 0 0, 100% 0);
+        background: #f2ead7;
+        z-index: 2; /* Устанавливаем z-index */
+      }
+      .rz-mayak-hero__background-image {
+        width: 100%; /* На всю ширину блока */
+        height: 100%; /* На всю высоту блока */
+        background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/26e80994ecec3a826ae9aa5c0e808f4c.png"); /* Укажите путь к изображению */
+        background-size: cover; /* Заполнение блока изображением */
+        background-position: 90%; /* Центрирование изображения */
+        z-index: 1; /* За фигурами */
+      }
+      /* 1 - css - Баннер - end */
+    </style>
+  </head>
+  <body>
+    <!-- 1 - Баннер -->
+    <div class="rz-mayak-hero rz-mayak-section">
+      <div class="rz-mayak-hero__background-image"></div>
+      <div class="rz-mayak-hero__shape-1"></div>
+      <div class="rz-mayak-hero__shape-2"></div>
+      <h1 class="rz-mayak-hero__title">Карьера в море</h1>
+      <p class="rz-mayak-hero__subtitle">
+        Стройте карьеру с горизонтом на успех и<br />двигайтесь вперед по своему
+        курсу!
+      </p>
+    </div>
+    <!-- 1 - Баннер - end -->
+  </body>
+</html>
