@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="../main.css" />
     <style>
       /* 6  - css - Популярные программы */
-      .popular-programs-container {
+      .rz-mayak-popular-programs-section {
         width: 100vw;
         min-height: 46.25vw; /* 888/1920 */
         overflow: hidden;
@@ -17,12 +17,12 @@
         justify-content: center;
         padding: 0;
       }
-      .popular-programs-title {
+      .rz-mayak-popular-programs-section__title {
         text-align: center;
         color: white;
         margin-bottom: 2.08vw !important; /* 40/1920 */
       }
-      .popular-programs-cards-row {
+      .rz-mayak-popular-programs-section__cards-row {
         width: 100vw;
         display: flex;
         flex-direction: row;
@@ -30,7 +30,7 @@
         align-items: flex-end;
         gap: 1.5625vw; /* 30/1920 */
       }
-      .popular-programs-card {
+      .rz-mayak-popular-programs-card {
         width: 23.96vw; /* 460/1920 */
         height: 18.75vw; /* 360/1920 */
         background: #fff8e7;
@@ -41,7 +41,7 @@
         align-items: flex-start;
         box-sizing: border-box;
       }
-      .popular-programs-card-title {
+      .rz-mayak-popular-programs-card__title {
         color: #181716;
         font-size: clamp(1.5rem, 2.5vw, 48px);
         font-family: "RodchenkoCondBold", "RodchenkoCond", Arial, sans-serif;
@@ -50,7 +50,7 @@
         word-wrap: break-word;
         margin-bottom: 2vw;
       }
-      .popular-programs-card-btn {
+      .rz-mayak-popular-programs-card__btn {
         margin-top: auto;
         width: 100%;
       }
@@ -59,41 +59,41 @@
   </head>
   <body>
     <!-- 6 - html - Популярные программы -->
-    <div class="popular-programs-container rz-mayak-block-bg-red">
-      <div class="popular-programs-title rz-mayak-heading">
+    <div class="rz-mayak-popular-programs-section rz-mayak-block-bg-red rz-mayak-section">
+      <div class="rz-mayak-popular-programs-section__title rz-mayak-heading">
         Популярные программы
       </div>
-      <div class="popular-programs-cards-row">
-        <div class="popular-programs-card">
-          <div class="popular-programs-card-title">
+      <div class="rz-mayak-popular-programs-section__cards-row">
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
             Использование CAD-систем в судостроении
           </div>
           <a
-            class="popular-programs-card-btn rz-mayak-btn rz-mayak-btn--primary"
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
             href="/p/katalog-kursov"
           >
             Смотреть все
             <div class="rz-mayak-btn__icon"></div>
           </a>
         </div>
-        <div class="popular-programs-card">
-          <div class="popular-programs-card-title">
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
             Морские грузоперевозки: основы и документация
           </div>
           <a
-            class="popular-programs-card-btn rz-mayak-btn rz-mayak-btn--primary"
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
             href="/p/katalog-kursov"
           >
             Смотреть все
             <div class="rz-mayak-btn__icon"></div>
           </a>
         </div>
-        <div class="popular-programs-card">
-          <div class="popular-programs-card-title">
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
             Введение в гидрографию <br />и морские исследования
           </div>
           <a
-            class="popular-programs-card-btn rz-mayak-btn rz-mayak-btn--primary"
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
             href="/p/katalog-kursov"
           >
             Смотреть все
