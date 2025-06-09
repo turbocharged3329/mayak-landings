@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Справочник профессий</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      /* 6 - css - Справочник профессий */
+      .rz-mayak-popular-programs-section {
+        width: 100vw;
+        min-height: 56vw; /* 1075/1920 */
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0;
+      }
+      .rz-mayak-popular-programs-section__title {
+        text-align: center;
+        color: white;
+        margin-bottom: 2.08vw !important; /* 40/1920 */
+      }
+      .rz-mayak-popular-programs-section__cards-row {
+        width: 73.54vw;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5625vw; /* 30/1920 */
+        flex-wrap: wrap;
+      }
+      .rz-mayak-popular-programs-card {
+        min-height: 13.54vw; /* 360/1920 */
+        background: #fff;
+        padding: 1.67vw; /* 32/1920 */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        box-sizing: border-box;
+      }
+      .rz-mayak-popular-programs-card__title {
+        color: #181716;
+        font-size: clamp(1.5rem, 2.5vw, 48px);
+        font-family: "RodchenkoCondBold", "RodchenkoCond", Arial, sans-serif;
+        font-weight: 700;
+        line-height: 1;
+        word-wrap: break-word;
+        margin-bottom: 2vw;
+      }
+      .rz-mayak-popular-programs-card__btn {
+        margin-top: auto;
+        width: 100%;
+      }
+      /* 6  - css - Справочник профессий - end */
+    </style>
+  </head>
+  <body>
+    <!-- 6 - html - Справочник профессий -->
+    <div
+      class="rz-mayak-popular-programs-section rz-mayak-block-bg-red rz-mayak-section"
+    >
+      <div class="rz-mayak-popular-programs-section__title rz-mayak-heading">
+        Справочник профессий
+      </div>
+      <div class="rz-mayak-popular-programs-section__cards-row">
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">Работа в море</div>
+          <a
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/rabota-v-more"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
+            Работа в порту
+          </div>
+          <a
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/rabota-v-portu_2"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
+            Работа в офисе
+          </div>
+          <a
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/rabota-v-ofise"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
+            Работа <br />на судостроительном заводе
+          </div>
+          <a
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/rabota-na-sudostroitelnom-zavode"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
+            Работа <br />в конструкторском бюро
+          </div>
+          <a
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/rabota-v-konstruktorskom-buro"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-popular-programs-card">
+          <div class="rz-mayak-popular-programs-card__title">
+            Работа <br />на судоремонтном заводе
+          </div>
+          <a
+            class="rz-mayak-popular-programs-card__btn rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/rabota-na-sudoremontnom-zavode"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 6 - html - end -->
+  </body>
+</html>
