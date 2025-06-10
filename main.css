@@ -124,3 +124,14 @@ body {
   width: 7vw;
 }
 /* main - css - end */
+
+
+/* 768px - main- css  */
+@media (max-width: 768px) {
+  .rz-mayak-heading {
+    font-size: clamp(2.5rem, 15vw, 56px);
+    line-height: 0.9;
+    text-align: center;
+  }
+}
+/* 768px - main- css - end */
