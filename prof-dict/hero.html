@@ -54,6 +54,37 @@
         background-position: 90%; /* Центрирование изображения */
         z-index: 1; /* За фигурами */
       }
+
+      @media (max-width: 768px) {
+        .rz-mayak-hero {
+          height: 165.3vw; /* 620 / 375 */
+        }
+        .rz-mayak-hero__title {
+          font-size: clamp(3rem, 17vw, 64px);
+          text-align: center;
+          left: 50%;
+          bottom: 10.13vw;
+          transform: translateX(-50%);
+        }
+        .rz-mayak-hero__shape-1 {
+          position: absolute;
+          left: 0;
+          top: 100%;
+          width: 100%; 
+          height: 56vw;
+          z-index: 2; /* Устанавливаем z-index */
+          background: #eb4040;
+          clip-path: polygon(0% 20%, 50% 0%, 100% 20%, 100% 100%, 0% 100%);
+          transform: translateY(-100%);
+        }
+        .rz-mayak-hero__shape-2 {
+          display: none;
+        }
+        .rz-mayak-hero__background-image {
+          background-position-y: -5.33vw;
+          background-image: url("https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/fca4d0077f64174d7c287234d02ad65d.png")
+        }
+      }
       /* 1 - css - Баннер - end */
     </style>
   </head>
