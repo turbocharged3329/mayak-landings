@@ -23,7 +23,7 @@ body {
 }
 .rz-mayak-heading {
   font-family: "RodchenkoCondBold", Arial, sans-serif !important;
-  font-size: clamp(5.25rem, 8.75vw, 168px);
+  font-size: clamp(3.5rem, 8.75vw, 168px);
   font-weight: 700;
   line-height: 1;
   word-wrap: break-word;
@@ -131,7 +131,6 @@ body {
     margin-bottom: 21.3vw;
   }
   .rz-mayak-heading {
-    font-size: clamp(2.5rem, 15vw, 56px);
     line-height: 0.9;
     text-align: center;
   }

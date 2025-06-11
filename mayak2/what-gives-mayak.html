@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Что дает Маяк?</title>
+    <link rel="stylesheet" href="../main.css" />
+    <style>
+      /* 3 - css - Что дает Маяк? */
+      .rz-mayak-advantages-block {
+        display: flex;
+        gap: 3.3vw;
+        width: 75.1vw;
+        margin-left: auto;
+        margin-right: auto;
+      }
+      .rz-mayak-advantages-block__title {
+        color: #181716;
+        writing-mode: vertical-rl;
+        transform: rotate(180deg);
+      }
+      .rz-mayak-advantages-block-cards {
+        display: flex;
+        flex-direction: column;
+        gap: 1.5rem;
+      }
+      .rz-mayak-advantages-card {
+        background: #fff;
+        border: 5px solid #eb3f3f;
+        border-radius: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1.25vw 3.33vw;
+        box-sizing: border-box;
+        text-align: center;
+        flex-grow: 1;
+        max-height: 290px;
+      }
+      .rz-mayak-advantages-card__title {
+        margin-bottom: 0.83vw;
+      }
+      .rz-mayak-advantages-card__desc {
+        color: #181716;
+        margin-bottom: 1.66vw; /* 32 / 1920 */
+        flex: 1;
+        font-weight: 400;
+        line-height: 1.2;
+      }
+      .rz-mayak-advantages-card-mobile-break {
+        display: none;
+      }
+
+      @media (max-width: 768px) {
+        .rz-mayak-advantages-block {
+          width: 91.46%; /* 343 / 375 */
+          gap: unset; /* 24 / 375 */
+          flex-direction: column;
+        }
+        .rz-mayak-advantages-block__title {
+          writing-mode: unset !important;
+          transform: rotate(0) !important;
+          margin-bottom: 11.46vw !important; /* 43 / 375 */
+        }
+        .rz-mayak-advantages-block-cards {
+          gap: 6.4vw;
+        }
+        .rz-mayak-advantages-card {
+          padding: 8.53vw 6.4vw; /* 32 / 375, 24 / 375 */
+          border-width: 3px;
+          max-height: unset;
+        }
+        .rz-mayak-advantages-card__title {
+          margin-bottom: 4.26vw;
+        }
+        .rz-mayak-advantages-card__desc {
+          margin-bottom: 8.53vw;
+          font-size: 1.125rem !important; /* 18 / 375 */
+        }
+        .rz-mayak-advantages-card-mobile-break {
+          display: inline;
+        }
+      }
+      /* 3 - css - end */
+    </style>
+  </head>
+  <body>
+    <!-- 3 - html - Что дает Маяк? -->
+    <div class="rz-mayak-advantages-block rz-mayak-section">
+      <div class="rz-mayak-advantages-block__title rz-mayak-heading">
+        Что дает Маяк?
+      </div>
+      <div class="rz-mayak-advantages-block-cards">
+        <div class="rz-mayak-advantages-card">
+          <div>
+            <div class="rz-mayak-advantages-card__title rz-mayak-card-title">
+              Образование
+            </div>
+            <div class="rz-mayak-advantages-card__desc rz-mayak-text-simple">
+              Выбирайте удобный формат обучения: онлайн-курсы, гибридный формат
+              с элементами очной работы или офлайн-практикумы
+            </div>
+          </div>
+          <a class="rz-mayak-btn rz-mayak-btn--primary" href="/p/obrazovanie">
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-advantages-card">
+          <div>
+            <div class="rz-mayak-advantages-card__title rz-mayak-card-title">
+              Карьера
+            </div>
+            <div class="rz-mayak-advantages-card__desc rz-mayak-text-simple">
+              Узнайте, как построить профессиональный путь в морской отрасли: от
+              первых шагов до лидерских позиций. Изучите требования к
+              образованию, откройте для себя карьерные перспективы <br class="rz-mayak-advantages-card-mobile-break" />и найдите
+              актуальные <br class="rz-mayak-advantages-card-mobile-break" /> вакансии
+            </div>
+          </div>
+          <a class="rz-mayak-btn rz-mayak-btn--primary" href="/p/karera-v-more">
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+        <div class="rz-mayak-advantages-card">
+          <div>
+            <div class="rz-mayak-advantages-card__title rz-mayak-card-title">
+              Мероприятия
+            </div>
+            <div class="rz-mayak-advantages-card__desc rz-mayak-text-simple">
+              Следите за ключевыми событиями морской отрасли: участвуйте в
+              форумах, мастер-классах и образовательных встречах. Здесь вы
+              сможете познакомиться с экспертами, узнать о трендах и сделать шаг
+              навстречу своей карьере в море
+            </div>
+          </div>
+          <a
+            class="rz-mayak-btn rz-mayak-btn--primary"
+            href="/p/meropriatia-obsij"
+          >
+            Подробнее
+            <div class="rz-mayak-btn__icon"></div>
+          </a>
+        </div>
+      </div>
+    </div>
+    <!-- 3 - html - end -->
+  </body>
+</html>
