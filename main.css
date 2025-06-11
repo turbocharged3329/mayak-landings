@@ -48,10 +48,10 @@ body {
   width: fit-content;
   border-radius: 40px;
   font-family: "Montserrat", Arial, sans-serif;
-  font-size: clamp(0.5rem, 0.9375vw, 18px) !important;
+  font-size: clamp(1.125rem, 0.9375vw, 18px) !important;
   line-height: 1.2;
   box-sizing: border-box;
-  padding: 0.83vw 2.6vw;
+  padding: 0.83vw 2.6vw; /* 16 / 1920 , 50 / 1920 */
   font-weight: 600;
   border: none;
   cursor: pointer;
@@ -125,13 +125,25 @@ body {
 }
 /* main - css - end */
 
-
 /* 768px - main- css  */
 @media (max-width: 768px) {
+  .rz-mayak-section {
+    margin-bottom: 21.3vw;
+  }
   .rz-mayak-heading {
     font-size: clamp(2.5rem, 15vw, 56px);
     line-height: 0.9;
     text-align: center;
+  }
+  .rz-mayak-text-simple {
+    line-height: 1.25;
+  }
+  .rz-mayak-btn {
+    padding: 4.26vw 13.33vw; /* 16 / 375 , 50 / 375 */
+  }
+  .rz-mayak-btn__icon {
+    width: 3.73vw; /* 14 / 375 */
+    height: 3.73vw; /* 14 / 375 */
   }
 }
 /* 768px - main- css - end */
