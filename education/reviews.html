@@ -110,11 +110,11 @@
     <section class="rz-mayak-reviews-block">
       <div class="rz-mayak-reviews-block__title rz-mayak-heading">Отзывы</div>
       <div class="rz-mayak-reviews-block-item">
-        <div class="rz-mayak-reviews-block-item__title rz-mayak-card-title">
+        <div class="rz-mayak-reviews-block-item__title rz-mayak-card-title" id="review-title">
           Сменила профессию благодаря курсу<br />на платформе «МАЯК»
         </div>
         <div class="rz-mayak-reviews-block-item__content">
-          <div class="rz-mayak-reviews-block-item__text">
+          <div class="rz-mayak-reviews-block-item__text" id="review-text">
             По образованию я филолог, но всегда мечтала связать свою жизнь с
             природой и путешествиями. Случайно наткнулась на курс по
             экологическому мониторингу на платформе «МАЯК». Программа оказалась
@@ -128,19 +128,21 @@
           <div class="rz-mayak-reviews-block-item__footer">
             <img
               class="rz-mayak-reviews-block-item__avatar"
+              id="review-avatar"
               src="https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/e7bd315fa05050ad03b92bee5d2837b6.png"
               alt="Анна, 27 лет, Архангельск"
             />
-            <div class="rz-mayak-reviews-block-item__author">
+            <div class="rz-mayak-reviews-block-item__author" id="review-author">
               Анна, 27 лет, Архангельск
             </div>
-
             <div class="rz-mayak-reviews-block-item__buttons">
               <button
                 class="rz-mayak-reviews-block-item__button rz-mayak-reviews-block-item__button-prev"
+                id="review-prev"
               ></button>
               <button
                 class="rz-mayak-reviews-block-item__button rz-mayak-reviews-block-item__button-next"
+                id="review-next"
               ></button>
             </div>
           </div>
@@ -148,5 +150,46 @@
       </div>
     </section>
     <!-- 8 - html - Отзывы - end -->
+    <script>
+      // 8 - js - Отзывы
+      const reviews = [
+        {
+          title: 'Сменила профессию благодаря курсу<br />на платформе «МАЯК»',
+          text: `По образованию я филолог, но всегда мечтала связать свою жизнь с природой и путешествиями. Случайно наткнулась на курс по экологическому мониторингу на платформе «МАЯК». Программа оказалась настолько увлекательной, что я решила попробовать себя в новой сфере. Теперь я работаю специалистом по охране окружающей среды в одной из региональных организаций. Работа позволяет мне часто бывать на природе, проводить исследования и участвовать в реальных проектах по защите экосистем. Заработок стал стабильнее, а самое важное — я нашла занятие, которое приносит радость каждый день!`,
+          avatar: 'https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/e7bd315fa05050ad03b92bee5d2837b6.png',
+          author: 'Анна, 27 лет, Архангельск',
+        },
+        {
+          title: 'Стал гидрографом после курсов<br /> на платформе «МАЯК»',
+          text: `Я по образованию инженер, но работал не по специальности — подрабатывал где придётся. Всегда тянуло к морю, но не знал, с чего начать. На платформе «МАЯК» нашёл курс по основам гидрографии — даже не думал, что такие направления доступны онлайн. Учёба была интересной. После окончания курса устроился техником в команду, занимающуюся морскими съемками дна. Сейчас работаю на исследовательском судне, участвую в настоящих экспедициях и наконец чувствую, что на своём месте. Доход вырос почти в 2,5 раза, но главное — появилось дело, которое по-настоящему вдохновляет!`,
+          avatar: 'https://3bc2bf43-e503-4f58-adbb-a824636912bd.selstorage.ru/9fbebbb497f427b2d0cc418f7e4b3fa4/upload/2e2bea57dc6f32f3306ef02458db3c1d.png',
+          author: 'Игорь, 32 года, Мурманск',
+        },
+      ];
+
+      let currentReview = 0;
+
+      function renderReview(idx) {
+        const review = reviews[idx];
+        document.getElementById('review-title').innerHTML = review.title;
+        document.getElementById('review-text').textContent = review.text;
+        document.getElementById('review-avatar').src = review.avatar;
+        document.getElementById('review-avatar').alt = review.author;
+        document.getElementById('review-author').textContent = review.author;
+      }
+
+      document.getElementById('review-prev').addEventListener('click', function () {
+        currentReview = (currentReview - 1 + reviews.length) % reviews.length;
+        renderReview(currentReview);
+      });
+      document.getElementById('review-next').addEventListener('click', function () {
+        currentReview = (currentReview + 1) % reviews.length;
+        renderReview(currentReview);
+      });
+
+      // Инициализация
+      renderReview(currentReview);
+      // 8 - js - Отзывы - end
+    </script>
   </body>
 </html>
